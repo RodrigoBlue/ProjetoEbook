@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Segredos da Paixão - Ebook Oficial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="animated">Descubra os Segredos da Paixão</h1>
+    <p class="animated delay-1">Aprenda técnicas infalíveis para enlouquecer na cama e se tornar inesquecível para quem você deseja.</p>
+
+    <div class="hero-image animated delay-2">
+      <img src="Captura de tela 2025-08-02 203400.png" alt="Casal apaixonado ao pôr do sol">
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="section animated delay-1">
+      <h2>Você está pronto para virar o jogo?</h2>
+      <p>
+        Pare de ser ignorado(a), inseguro(a) ou apagado(a) nas relações. Com o eBook <strong>Segredos da Paixão</strong>, você vai descobrir como despertar desejo, aumentar sua autoconfiança e dominar os segredos da sedução e do prazer.
+      </p>
+    </section>
+
+    <section class="section animated delay-2">
+      <h2>O que você vai aprender:</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <strong><i class="fas fa-star"></i> Autoconfiança Inabalável</strong>
+          Aprenda a atrair naturalmente, apenas sendo você mesmo(a).
+        </div>
+        <div class="benefit">
+          <strong><i class="fas fa-fire"></i> Técnicas Avançadas na Cama</strong>
+          Surpreenda, encante e deixe lembranças inesquecíveis.
+        </div>
+        <div class="benefit">
+          <strong><i class="fas fa-brain"></i> Gatilhos Mentais</strong>
+          Use psicologia aplicada para aumentar a atração e criar conexão intensa.
+        </div>
+        <div class="benefit">
+          <strong><i class="fas fa-venus-mars"></i> Segredos Masculinos e Femininos</strong>
+          Entenda como realmente funciona o desejo de cada gênero.
+        </div>
+      </div>
+    </section>
+
+    <section class="section animated delay-3">
+      <h2>Para quem é este Produto?</h2>
+      <p>
+        Para homens e mulheres solteiros(as) ou comprometidos(as) que desejam <strong>reacender a chama da paixão</strong>, <strong>conquistar com segurança</strong> e <strong>ter mais prazer</strong> em todas as suas relações.
+      </p>
+    </section>
+
+    <div class="cta animated delay-3">
+      <h2>Transforme Sua Vida Amorosa Hoje!</h2>
+      <div class="price">
+        <span>R$97,00</span> R$19,90
+      </div>
+      <p>Menos de R$0,70 por dia para dominar os segredos da paixão</p>
+      
+      <a href="https://seulinkdecheckout.com" target="_blank">
+        <button>
+          QUERO MEU EBOOK AGORA <i class="fas fa-arrow-right"></i>
+        </button>
+      </a>
+      
+      <div class="guarantee">
+        <i class="fas fa-shield-alt"></i>
+        <span>Garantia de 7 dias ou seu dinheiro de volta</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Segredos da Paixão - Todos os direitos reservados.<br>
+    <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
+  </footer>
+
+  <script>
+    // Adiciona animação quando o elemento entra na viewport
+    document.addEventListener('DOMContentLoaded', function() {
+      const animatedElements = document.querySelectorAll('.animated');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+      
+      animatedElements.forEach(el => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+      });
+    });
+  </script>
+
+</body>
+</html>
